@@ -125,27 +125,27 @@ p.donut_text {
 @media only screen and (max-width: 481px) {
 
   div .main-text {
-    width: 300px;
+    width: 250px;
   }
 
   .main-text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   div .sub-text {
-    width: 300px;
+    width: 250px;
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   p {
     font-size: 16px;
   }
   p.donut_text {
-    font-size: 16px;
-    width: 300px;
+    font-size: 14px;
+    width: 250px;
   }
 
 }
