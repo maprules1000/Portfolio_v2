@@ -1,0 +1,152 @@
+.image {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero {
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  float: right;
+  position: fixed;
+  right: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div .main-text, .sub-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+div .main-text {
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.main-text {
+  color: #ffffff;
+  font: 30px Helvetica, sans-serif;
+  margin-top: 8px;
+ }
+
+h1 {
+  color: #ffffff;
+  font: bold 64px Helvetica, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+div .sub-text {
+  width: 420px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+p {
+  color: #ffffff;
+  font: 20px Helvetica, sans-serif;
+  margin: 2px 0px;
+  font-weight: 500;
+}
+
+p.sidenote {
+  font: 12px Helvetica, sans-serif;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+a:hover{
+  color: #ffffff;
+}
+
+span.mobile {
+  display: none;
+}
+
+p.donut_text {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 420px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    min-width: 1440px;
+    min-height: 100%;
+    min-width: 100%;
+    float: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .main-text {
+    font: 24px Helvetica, sans-serif;
+  }
+
+  div .sub-text {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  span.mobile {
+    display: inline;
+  }
+}
+
+
+@media only screen and (max-width: 481px) {
+
+  div .main-text {
+    width: 300px;
+  }
+
+  .main-text {
+    font-size: 18px;
+  }
+
+  div .sub-text {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  p.donut_text {
+    font-size: 16px;
+    width: 300px;
+  }
+
+}
+
