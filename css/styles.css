@@ -68,6 +68,14 @@ body {
   text-align: center;
 }
 
+.content-box.almost-last {
+  margin-bottom: 2vh;
+}
+
+.content-box.last {
+  margin-top: auto;
+}
+
 .content-box.carousel .header {
   margin-bottom: 0;
 }
@@ -77,6 +85,8 @@ body {
   height: 98vh;
   position: relative;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .header {
