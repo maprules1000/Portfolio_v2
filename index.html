@@ -124,7 +124,7 @@
     ];
     var selected = Math.floor(Math.random() * images.length);
     // this is not ideal right now
-    document.querySelector(".hero").setAttribute('style','background: url(' + images[selected] + ') no-repeat; background-size: cover; min-width: 100%; min-height: 100%; float: right; position: fixed; right: 0;');
+    document.querySelector(".hero").setAttribute('style','background: url(' + images[selected] + ') no-repeat; background-size: cover; min-width: 100%; min-height: 100%; float: right; position: fixed; right: 0; background-position: center, center;');
     document.querySelector(".donut-link").setAttribute('href', links[selected]);
 
     $(document).ready(function(){
