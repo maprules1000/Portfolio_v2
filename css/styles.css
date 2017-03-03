@@ -5,6 +5,27 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+p {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 2px 0px;
+  font-weight: 300;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: 0.2s all ease-in;
+}
+
+a:visited {
+  color: #aaaaaa;
+}
+
+a:hover {
+  color: #00ff77;
+}
+
 .center-text {
   text-align: center;
 }
@@ -57,30 +78,6 @@ body {
   right: 0;
 }
 
-.content-box {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  color: #ffffff;
-  margin-top: 2vh;
-}
-
-.content-box.centered {
-  text-align: center;
-}
-
-.content-box.almost-last {
-  margin-bottom: 2vh;
-}
-
-.content-box.last {
-  margin-top: auto;
-  margin-bottom: 2vh;
-}
-
-.content-box.carousel .header {
-  margin-bottom: 0;
-}
-
 .container {
   width: 600px;
   height: 98vh;
@@ -96,13 +93,12 @@ body {
 .container .header .title {
   font-size: 42px;
   font-weight: bold;
-  display: inline;
+  display: block;
 }
 .container .header .social-icons {
   font-size: 26px;
-  display: inline;
-  margin-left: 20%;
   vertical-align: 2px;
+  display: block;
 }
 
 .container .header .social-icons .fa {
@@ -117,25 +113,24 @@ body {
   border-color: #00ff77;
 }
 
-p {
+.content-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
   color: #ffffff;
-  font-size: 20px;
-  margin: 2px 0px;
-  font-weight: 300;
+  margin-top: 2vh;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: underline;
-  transition: 0.2s all ease-in;
+.content-box.almost-last {
+  margin-bottom: 2vh;
 }
 
-a:visited {
-  color: #aaaaaa;
+.content-box.last {
+  margin-top: auto;
+  margin-bottom: 2vh;
 }
 
-a:hover {
-  color: #00ff77;
+.content-box.carousel .header {
+  margin-bottom: 0;
 }
 
 .carousel-item.last-item {
@@ -166,11 +161,13 @@ a:hover {
 .owl-carousel .owl-nav .owl-next {
   position: absolute;
   height: 180px;
-  width: 22px;
+  width: 30px;
   top: 0;
   line-height: 190px;
   transition: 0.7s opacity ease-in, 0.3s color ease-in;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  font-size: 18px;
 }
 
 .owl-prev {
@@ -204,10 +201,6 @@ a:hover {
     bottom: 0;
     right: 0;
   }
-
-  .content-box {
-    font-size: 24px;
-  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -216,6 +209,12 @@ a:hover {
     width: 90%;
     min-width: 290px;
     font-size: 16px;
+  }
+
+  .container .content-box .social-icons {
+    display: block;
+    margin-left: 0;
+    text-align: center;
   }
 
   p {
