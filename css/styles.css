@@ -152,6 +152,7 @@ a:hover {
   margin: auto;
 }
 
+.carousel-item-popup .carousel-caption,
 .carousel-item .carousel-caption {
   font-size: 18px;
   text-align: center;
@@ -159,16 +160,46 @@ a:hover {
 
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
-  height: 180px;
-  width: 30px;
-  top: 0;
-  line-height: 190px;
-  transition: 0.7s opacity ease-in, 0.3s color ease-in;
+  height: 70px;
+  width: 25px;
+  top: 40%;
+  transform: translateY(-50%);
+  transition: 0.2s opacity ease-in, 0.3s color ease-in;
   background: rgba(0,0,0,0.5);
   text-align: center;
   font-size: 18px;
+  opacity: 0.4;
 }
+
+.owl-carousel-popup .owl-nav .owl-prev,
+.owl-carousel-popup .owl-nav .owl-next {
+  top: 50%;
+  width: 60px;
+}
+
+.owl-carousel-popup:hover .owl-nav .owl-prev,
+.owl-carousel-popup:hover .owl-nav .owl-next,
+.owl-carousel:hover .owl-nav .owl-prev,
+.owl-carousel:hover .owl-nav .owl-next {
+  opacity: 1;
+}
+.owl-carousel-popup .owl-nav .owl-prev.disabled,
+.owl-carousel-popup .owl-nav .owl-next.disabled,
+.owl-carousel .owl-nav .owl-prev.disabled,
+.owl-carousel .owl-nav .owl-next.disabled,
+.owl-carousel-popup:hover .owl-nav .owl-prev.disabled,
+.owl-carousel-popup:hover .owl-nav .owl-next.disabled,
+.owl-carousel:hover .owl-nav .owl-prev.disabled,
+.owl-carousel:hover .owl-nav .owl-next.disabled {
+  opacity: 0;
+}
+
+
+
 
 .owl-prev {
   left: 0;
