@@ -48,7 +48,7 @@
       <div class="header">
         <div class="title center-text">Work</div>
       </div>
-      <div class="owl-carousel owl-theme" onclick="ga('send', 'event', 'Projects', 'click')">
+      <div id="owl-carousel-main" class="owl-carousel owl-theme" onclick="ga('send', 'event', 'Projects', 'click')">
         <div class="carousel-item">
           <a href="rm-dash.html" rel="modal:open">
             <div class="carousel-image-container">
@@ -128,7 +128,7 @@
     document.querySelector(".donut-link").setAttribute('href', links[selected]);
 
     $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
+      $("#owl-carousel-main").owlCarousel({
         nav: true,
         autoWidth: true,
         margin: 10,
