@@ -1,1 +1,36 @@
-<img src="images/screenshots/kickback-full-1.jpg" alt="CS:GO Betting">
+<div class="popup-carousel">
+  <div class="owl-carousel-popup owl-carousel owl-theme" onclick="ga('send', 'event', 'Projects', 'click')">
+    <div class="carousel-item-popup">
+        <div class="carousel-image-container">
+          <img class="owl-lazy" data-src="/images/screenshots/kickback-full/1.jpg" alt="CS:GO Betting - Match Listing">
+        </div>
+        <div class="carousel-caption">
+          CS:GO Betting - Match Listing
+        </div>
+    </div>
+    <div class="carousel-item-popup">
+        <div class="carousel-image-container">
+          <img class="owl-lazy" data-src="/images/screenshots/kickback-full/2.jpg" alt="CS:GO Betting - Match Betting & View">
+        </div>
+        <div class="carousel-caption">
+          CS:GO Betting - Match Betting & View
+        </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).on($.modal.OPEN, function(){
+    $(".owl-carousel-popup").owlCarousel({
+      items: 1,
+      nav: true,
+      autoWidth: false,
+      dots: true,
+      center: true,
+      lazyLoad: true,
+      navText: [
+        '<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
+        '<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>']
+    });
+  });
+</script>
