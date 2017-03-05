@@ -133,6 +133,45 @@ a:hover {
   margin-bottom: 0;
 }
 
+.jquery-modal .modal {
+  border-radius: 0px;
+}
+
+.jquery-modal .modal a.close-modal {
+  background: none;
+}
+
+.jquery-modal .modal a.close-modal {
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.jquery-modal .modal a.close-modal:hover {
+  opacity: 1;
+}
+
+.jquery-modal .modal a.close-modal:before,
+.jquery-modal .modal a.close-modal:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+
+.jquery-modal .modal a.close-modal:before {
+  transform: rotate(45deg);
+}
+
+.jquery-modal .modal a.close-modal:after {
+  transform: rotate(-45deg);
+}
+
 .carousel-item.last-item {
   width: 150px;
   height: 200px;
@@ -187,6 +226,7 @@ a:hover {
 .owl-carousel:hover .owl-nav .owl-next {
   opacity: 1;
 }
+
 .owl-carousel-popup .owl-nav .owl-prev.disabled,
 .owl-carousel-popup .owl-nav .owl-next.disabled,
 .owl-carousel .owl-nav .owl-prev.disabled,
@@ -197,9 +237,6 @@ a:hover {
 .owl-carousel:hover .owl-nav .owl-next.disabled {
   opacity: 0;
 }
-
-
-
 
 .owl-prev {
   left: 0;
