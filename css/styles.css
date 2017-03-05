@@ -135,6 +135,7 @@ a:hover {
 
 .jquery-modal .modal {
   border-radius: 0px;
+  max-width: 950px;
 }
 
 .jquery-modal .modal a.close-modal {
