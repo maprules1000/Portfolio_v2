@@ -91,7 +91,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .container .header .title {
-  font-size: 42px;
+  font-size: 38px;
   font-weight: bold;
   display: block;
 }
@@ -256,6 +256,10 @@ a:hover {
 .owl-prev:hover,
 .owl-next:hover {
   color: #00ff77;
+}
+.blog-post-title {
+  font-size: 26px;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
