@@ -55,10 +55,6 @@ a:hover {
   border-color: transparent;
 }
 
-.browserless-img {
-  padding-top: 8px;
-}
-
 .background-image {
   position: relative;
   min-height: 100%;
@@ -188,8 +184,13 @@ a:hover {
   height: 200px;
 }
 
-.carousel-item .carousel-image-container img {
+.carousel-item .carousel-image-container .image {
   margin: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 250px;
+  height: 180px;
 }
 
 .carousel-item-popup .carousel-caption,
