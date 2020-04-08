@@ -1,0 +1,78 @@
+<div class="popup-carousel">
+  <div class="owl-carousel-popup owl-carousel owl-theme" onclick="ga('send', 'event', 'Projects', 'click')">
+    <div class="carousel-item-popup">
+      <div class="carousel-image-container">
+        <img class="owl-lazy" data-src="/images/screenshots/outdoorsy/1.png" alt="Outdoorsy home page">
+      </div>
+      <div class="carousel-caption">
+        Outdoorsy Home Page
+      </div>
+    </div>
+    <div class="carousel-item-popup">
+      <div class="carousel-image-container">
+        <img class="owl-lazy" data-src="/images/screenshots/outdoorsy/2.png" alt="Outdoorsy search page">
+      </div>
+      <div class="carousel-caption">
+        Outdoorsy Search
+      </div>
+    </div>
+    <div class="carousel-item-popup">
+      <div class="carousel-image-container">
+        <img class="owl-lazy" data-src="/images/screenshots/outdoorsy/3.png" alt="Outdoorsy RV listing">
+      </div>
+      <div class="carousel-caption">
+        Outdoorsy RV Listing
+      </div>
+    </div>
+    <div class="carousel-item-popup">
+      <div class="carousel-image-container">
+        <img class="owl-lazy" data-src="/images/screenshots/outdoorsy/4.png" alt="Outdoorsy checkout questions page">
+      </div>
+      <div class="carousel-caption">
+        Outdoorsy Checkout - Questions
+      </div>
+    </div>
+    <div class="carousel-item-popup">
+      <div class="carousel-image-container">
+        <img class="owl-lazy" data-src="/images/screenshots/outdoorsy/5.png" alt="Outdoorsy checkout payment page">
+      </div>
+      <div class="carousel-caption">
+        Outdoorsy Checkout - Payment
+      </div>
+    </div>
+    <div class="carousel-item-popup">
+      <div class="carousel-image-container">
+        <img class="owl-lazy" data-src="/images/screenshots/outdoorsy/6.png" alt="Outdoorsy checkout confirmation page">
+      </div>
+      <div class="carousel-caption">
+        Outdoorsy Checkout - Confirmation
+      </div>
+    </div>
+    <div class="carousel-item-popup">
+      <div class="carousel-image-container">
+        <img class="owl-lazy" data-src="/images/screenshots/outdoorsy/7.png" alt="Outdoorsy dashboard">
+      </div>
+      <div class="carousel-caption">
+        Outdoorsy Dashboard
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).on($.modal.OPEN, function(){
+    $(".owl-carousel-popup").owlCarousel({
+      items: 1,
+      nav: true,
+      autoWidth: false,
+      dots: true,
+      center: true,
+      lazyLoad: true,
+      navClass: ['owl-prev owl-pop-prev','owl-next owl-pop-next'],
+      navText: [
+        '<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
+        '<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>']
+    });
+  });
+
+</script>
